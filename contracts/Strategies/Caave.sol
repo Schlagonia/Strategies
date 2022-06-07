@@ -7,20 +7,20 @@ pragma experimental ABIEncoderV2;
 import {
     BaseStrategy,
     StrategyParams
-} from "./BaseStrategy.sol";
+} from "../BaseStrategy.sol";
 import {SafeERC20, SafeMath, IERC20, Address} from "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 import {Math} from "@openzeppelin/contracts/math/Math.sol";
 
-import "./interfaces/curve/ICurveFi.sol";
-import "./interfaces/Convex/IConvexDeposit.sol";
-import "./interfaces/Convex/IConvexRewards.sol";
-import "./interfaces/uni/IUniswapV2Router02.sol";
-import "./interfaces/aave/V2/IAaveIncentivesController.sol";
-import "./interfaces/aave/V2/IStakedAave.sol";
-import "./interfaces/aave/V2/ILendingPool.sol";
-import "./interfaces/aave/V2/IProtocolDataProvider.sol";
-import "./interfaces/aave/V2/ILendingPoolAddressesProvider.sol";
-import "./interfaces/chainlink/AggregatorV3Interface.sol";
+import "../interfaces/curve/ICurveFi.sol";
+import "../interfaces/Convex/IConvexDeposit.sol";
+import "../interfaces/Convex/IConvexRewards.sol";
+import "../interfaces/uni/IUniswapV2Router02.sol";
+import "../interfaces/aave/V2/IAaveIncentivesController.sol";
+import "../interfaces/aave/V2/IStakedAave.sol";
+import "../interfaces/aave/V2/ILendingPool.sol";
+import "../interfaces/aave/V2/IProtocolDataProvider.sol";
+import "../interfaces/aave/V2/ILendingPoolAddressesProvider.sol";
+import "../interfaces/chainlink/AggregatorV3Interface.sol";
 
 interface IERC20Extended is IERC20 {
     function decimals() external view returns (uint8);
